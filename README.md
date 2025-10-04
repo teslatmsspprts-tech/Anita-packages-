@@ -26,4 +26,6 @@ https://YOUR_USERNAME.github.io/Anita-packages-/
 ## Usage
 
 1. Open `index.html` in a browser.
-2. Click **Play** to start, **Pause** to stop, **Reset** to restart.
+2. Click **Play** to start, **Pause** to stop, **Reset** to
+
+ restart.
