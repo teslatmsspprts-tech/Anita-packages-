@@ -1,0 +1,25 @@
+// Initialize the map
+const map = L.map('map').setView([51.505, -0.09], 13);
+
+// Add a tile layer
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap contributors'
+}).addTo(map);
+
+// Add a marker
+let marker = L.marker([51.505, -0.09]).addTo(map);
+
+// Start tracking button
+document.getElementById('startTracking').addEventListener('click', () => {
+  marker = L.marker([51.505, -0.09]).addTo(map);
+  marker.bindPopup("Tracking...").openPopup();
+  marker.classList.add('blink'); // Apply blink animation
+});
+
+// Stop tracking button
+document.getElementById('stopTracking').addEventListener('click', () => {
+  if (marker) {
+    marker.remove(); // Remove the marker
+    marker = null;
+  }
+});
