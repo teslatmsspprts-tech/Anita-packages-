@@ -9,7 +9,6 @@ This project shows a package moving from Austin, TX to Miami, FL using Leaflet.j
 ## Live Demo
 
 https://YOUR_USERNAME.github.io/Anita-packages-/
-
 ## Usage
 
 1. Open `index.html` in a browser.
